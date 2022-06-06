@@ -14,24 +14,27 @@ body{
 }
 
 main{
-    background: #89ace3c2;
-    background-image: url(./images/main-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+   
     margin: 50px 170px;
     display: flex;
     flex-flow: row;
-    border-radius: 32px;
     height: 700px;
 }
 
 .credit-card-info{
+    background: #89ace3c2;
+    background-image: url(./images/main-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     justify-content: flex-start;
-    margin: 90px 0px 50px 35px;
+    height: 100%;
+    padding: 100px 0 60px 50px;
+    border-radius: 32px 0 0 32px;
     display: flex;
     flex-flow: column;
     gap: 25px;
     color: #fff;
+    flex-basis: 60%;
 }
 
 .credit-card-links{
@@ -84,6 +87,7 @@ main{
     border-bottom: 1px solid #fff;
     font-size: 16px;
     height: 30px;
+    color: #fff;
 }
 
 
@@ -135,15 +139,23 @@ input[type=submit]{
 
 }
 
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #4986E0;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+}
+
 .details{
     background: #FCF6F5;
-    width: 336px;
     border-radius: 0 32px 32px 0;
     color: #4986E0;
+    flex-basis: 40%;
 }
 
 .details .back-btn{
-    transform: scale(0.8) translate(320px);  
+    transform: scale(0.8) translate(310px);  
 }
 
 .details-content{
@@ -153,7 +165,7 @@ input[type=submit]{
 }
 
 .details-content .logo{
-    transform: scale(0.5) translateY(-20%);
+    transform: scale(0.5) translateY(-30%);
 
 }
 
@@ -163,19 +175,20 @@ input[type=submit]{
 
 .details-content h4{
     align-self: center;
-    margin-top: -60px;
-    font-size: 18px;
+    margin-top: -110px;
+    font-size: 22px;
+    transform: translateY(30px);
 }
 
 em{
     font-size: 40px;
-    margin-top: 30px;
+    margin-top: 70px;
     align-self: center;
     font-weight: 600;
 }
 
 .features{
-     margin-top: 30px;
+     margin-top: 40px;
      align-self: center;
 }
 
@@ -189,6 +202,57 @@ em{
 .feature img{
     transform: scale(0.8);
 }
+
+@media(max-width: 700px) {
+    body{
+        background-image: none;
+    }
+    
+    main{
+        display: grid;
+        grid-template-areas: 
+                'details'
+                'card-info';   
+        gap: -90px; 
+        width: 100%;
+        transform: translateX(-45%) translateY(-5%); 
+    }
+    section{
+        display: block;
+    }
+    
+    .credit-card-info{
+        grid-area: card-info;
+        background-image: url(./images/main-bg.png);
+        width: 100%;
+        border-radius: 0 0 32px 32px;
+    }
+
+    .details{
+        grid-area: details;
+        border-radius: 32px 32px 0 0;   
+    }
+
+    .details .back-btn{
+        transform: translateX(320px) translateY(20px);
+    }
+
+    .card-info{
+        width: 100%;
+    }
+
+    .date-cvv{
+        width: 100%;
+    }
+    input[type=submit]{
+        transform: translateX(-20%);
+    }
+    
+
+
+
+}
+  
 
 
 
