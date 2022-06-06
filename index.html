@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <title>Checkout Page</title>
+</head>
+<body>
+    <main>
+        <section class="credit-card-info">
+            <div class="credit-card-links">
+                <a href="" class="cred-card">Credit Card</a>
+                <a href="" class="paypal">Pay Pal</a>
+            </div>
+            <div class="img">
+                <img src="./images/credit-card.png" alt="">
+            </div>
+
+            <div class="card-info">
+                <div class="top-part">
+                    <h3>CARD INFORMATION</h3>
+                    <label for="card-holder" class="c-info-label">CARD HOLDER</label>
+                    <input type="text" placeholder="Darrell Steward" id="card-holder" class="inputs" 
+                    >
+
+                    <label for="card-number" class="c-info-label">CARD NUMBER</label>
+                    <input id="card-number" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" 
+                    autocomplete="cc-number" maxlength="19" placeholder="5134 - 0373 - 9596 - 7276" class="inputs"
+                    >
+                </div>
+
+                <div class="date-cvv">
+                    <div class="date">
+                    <label for="expiry-date" class="c-info-label">EXPIRATION DATE</label>
+                    <input name="credit-expires" class="inputs"
+                    type="tel" pattern="\d*" maxlength="5" placeholder="10 / 12" id="expiry-date" >
+                    </div>
+
+                    <div class="cvv">
+                        <label for="cvv" class="c-info-label">CVV<img src="./images/info.png" alt=""></label>
+                        <input name="credit-cvc" class="inputs" type="password" pattern="\d*" 
+                        maxlength="3" placeholder="***">
+                    </div>
+
+                </div>
+
+                <input type="submit" class="submit-btn" value="PAY NOW">
+            </div>
+
+
+        </section>
+
+
+        <section class="details">
+            <a href="https://chi-ife.github.io/Codehouse/"><img src="./images/back-button.png" alt="" class="back-btn"></a>
+            <div class="details-content">
+                <h2>Your Order</h2>
+                <img src="./images/logo.png" alt="" class="logo">
+                <h4>Premium Class</h4>
+                <em>$854</em>
+                <div class="features">
+                    <div class="feature">
+                        <img src="./images/vector.png" alt=""><p>One tutor Dedicated to you</p>
+                    </div>
+                    <div class="feature">
+                        <img src="./images/vector.png" alt=""><p>Ask Questions at Anytime</p>
+                    </div>    
+                    <div class="feature">
+                        <img src="./images/vector.png" alt=""><p>Free Access To Recorded Videos</p>
+                    </div>    
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
