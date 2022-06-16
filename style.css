@@ -30,7 +30,7 @@ main{
 }
 
 .credit-card-links{
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.445);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.466);
     display: flex;
     gap: 30px;
     width: 50%;
