@@ -202,6 +202,21 @@ em{
     font-weight: 500;
 }
 
+@media (max-width: 800px){
+    main{
+        flex-flow: column-reverse;
+        height: fit-content;
+        margin: 0;
+    }
+    .credit-card-links{
+        width: 100%;
+    }
+    .features{
+        display: none;
+    }
+    
+    
+}
 
 
 
